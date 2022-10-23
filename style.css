@@ -50,3 +50,14 @@ body{
 .container-2 div:nth-child(2){
     border: 2px solid blue;
 }
+
+.score1-container, .score2-container{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    
+}
+
+.score1-container h2:nth-child(2), .score2-container h2:nth-child(2){
+    color: blue;
+}
