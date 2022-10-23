@@ -1,5 +1,52 @@
-.main-container{
+body{
+    padding: 0;
+    margin: 0;
+}
+.main-container-one{
     width: 100vw;
     height: 100vh;
-    background-color:#FDFDBD;
+    background-color:#fafaaa;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-1 div img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.container-1 div h2{
+    font-size: 2rem;
+}
+.container-1{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+.container-2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.container-2 div{
+    font-size: 2rem;
+    cursor: pointer;
+    width: auto;
+    background-color: rgb(61, 167, 40);
+    padding:4px 10px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+}
+.container-2 div:nth-child(1){
+    
+    border: 2px solid black;
+}
+
+.container-2 div:nth-child(2){
+    border: 2px solid blue;
 }

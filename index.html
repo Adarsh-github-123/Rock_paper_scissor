@@ -4,22 +4,39 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hello World!</title>
-    <link rel="stylesheet" href="https://engin-ui.netlify.app/components/style.css">
     <!-- linking to PyScript assets -->
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <link rel="stylesheet" href="./style.css">
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
   </head>
   <body>
-   <div class="main-container">
+    
+   <div class="main-container-one">
     <div class="container-1">
-hi this is adars
+        <div class="container-user1">
+            <div id="img1">
+            <img src="./assets/paper.jpg" alt="paper image" >
+        </div>
+            <h2>Score1:</h2>
+            <h2 id="score1">0</h2>
+        </div>
+        <div class="container-user2">
+            <div id="img2">
+            <img src="./assets/rock.jpg" alt="rock image">
+        </div>
+        <h2>Score2:</h2>
+            <h2 id="score2">0</h2>
+        </div>
     </div>
     <div class="container-2">
-        
+        <div id="start-game" pys-onClick="show_output" >
+            Play
+        </div>
+        <div id="reset-game" pys-onClick="reset_func">
+           Restart
+        </div>
     </div>
    </div>
-    
   <!-- Put Python code inside the the <py-script> tag -->
 <py-script src="./main.py"></py-script>
  
